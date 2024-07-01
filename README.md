@@ -13,3 +13,5 @@ When compiling this program the following build options must be met:
 
 If for some reason things doesn't work you can enable DEBUG information by setting the DEBUG_LVL flag to either 1 or 2. 1 Will simply show the status of the RTS/DTR control signals and basic data flow.
 Setting it to 2 will enable output of all data flowing from and to the ESP device itself.
+
+If you are having problems with data not comming back from the ESP32 to esptool please try our own fork of esptool which has some alterations that makes it work more smoothly when the RP2040 is acting as a USB2Serial gateway. You can find it [here](https://github.com/PontusO/esptool).
